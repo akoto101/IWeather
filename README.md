@@ -25,48 +25,48 @@ contains two parameters , ApiKey as String, Latitude and Longhitude as double;
 
 Get Current Weather Information
 
-City as String
-Country as String
+	City as String
+	Country as String
 
-Current_Country as String * Get Current Country
-Current_City as String * Get current City
-current_CountryLat as float * Get Current Latitude
-current_CountryLong as float * Get Current Longhitude
-Current_Region as String * Get Current Region
-Current_TimeZone as String * Get Current TimeZon
-
-
-Temperature_Min as int * Minimum Temperature
-Temperature_Max as int * Maximum Temparature
-Temerature_Value as int * Current Temperature value
+	Current_Country as String * Get Current Country
+	Current_City as String * Get current City
+	current_CountryLat as float * Get Current Latitude
+	current_CountryLong as float * Get Current Longhitude
+	Current_Region as String * Get Current Region
+	Current_TimeZone as String * Get Current TimeZon
 
 
-Wind_Value as double * Current Wind Speed
-Wind_Direction_Name as String * Wind Name (e.g North,South,East,West)
-Wind_Direction_Code as String * Wind Direction Code (e.g N,S,E,W)
-Wind_Name as String * Wind Name (e.g Breeze)
-Wind_Direction_Value as String * Wind degree
+	Temperature_Min as int * Minimum Temperature
+	Temperature_Max as int * Maximum Temparature
+	Temerature_Value as int * Current Temperature value
 
 
-Humidity as int * Humidity Value
+	Wind_Value as double * Current Wind Speed
+	Wind_Direction_Name as String * Wind Name (e.g North,South,East,West)
+	Wind_Direction_Code as String * Wind Direction Code (e.g N,S,E,W)
+	Wind_Name as String * Wind Name (e.g Breeze)
+	Wind_Direction_Value as String * Wind degree
 
 
-Weather as String * Get Current Weather
-Weather_Icon as String * Get Weather icon
+	Humidity as int * Humidity Value
 
 
-Visibility as int * Get Area Visibility
+	Weather as String * Get Current Weather
+	Weather_Icon as String * Get Weather icon
 
 
-Cloud_Value as int * Cloud Percentage in the certain Area
-Cloud_Name as String * Get the Cloud Name (e.g Scattered Clouds)
+	Visibility as int * Get Area Visibility
 
 
-Pressure as int * Get Pressure Value
-Pressure_Unit as String * Get Pressure Unit
+	Cloud_Value as int * Cloud Percentage in the certain Area
+	Cloud_Name as String * Get the Cloud Name (e.g Scattered Clouds)
 
 
-Last_Update as String * Get Weather last Update
+	Pressure as int * Get Pressure Value
+	Pressure_Unit as String * Get Pressure Unit
+
+
+	Last_Update as String * Get Weather last Update
 
 
 WeatherForecast class load the weather in specific Day Range. 
@@ -87,40 +87,40 @@ Get Current Weather Forecast Information
 
 XmlUnits as String  - Get or Set XmlUnits (Metric = Celsius , Imperial = Fahrenheit, Default = Kelvin)
 
-Time_Current - Get Current Time;
+	Time_Current - Get Current Time;
 
-Time_Forecast_From = Get Forecast Starts Day 0,Returns String Array;
-Time_ForecastTo  = Get Forecast Starts Day 0,Returns String Array;
+	Time_Forecast_From = Get Forecast Starts Day 0,Returns String Array;
+	Time_ForecastTo  = Get Forecast Starts Day 0,Returns String Array;
 
-Weather_Id = Get Weather Icon Id , Returns String Array
-Weather_Icon = Get Weather Icon Symbol , Returns String Array
+	Weather_Id = Get Weather Icon Id , Returns String Array
+	Weather_Icon = Get Weather Icon Symbol , Returns String Array
+	
+	Wind_Speed =  Returns Double Array
+	Wind_Name =  Returns String Array
+	Wind_Code = Returns String Array
 
-Wind_Speed =  Returns Double Array
-Wind_Name =  Returns String Array
-Wind_Code = Returns String Array
+	Temperature_OnDay = Returns Double Array
+	Temperature_OnNight = Returns Double Array
+	Temperature_OnEve = Returns Double Array
+	Temperature_OnMorning = Returns Double Array
+	Temperature_Minimum = Returns Double Array
+	Temperature_Maximum = Returns Double Array
 
-Temperature_OnDay = Returns Double Array
-Temperature_OnNight = Returns Double Array
-Temperature_OnEve = Returns Double Array
-Temperature_OnMorning = Returns Double Array
-Temperature_Minimum = Returns Double Array
-Temperature_Maximum = Returns Double Array
+	Pressure_Units = Return String Array
+	Presure_vale = Returns Double Array
 
-Pressure_Units = Return String Array
-Presure_vale = Returns Double Array
+	Humidity_Value = Returns Int Array
+	Humidity_Unit = Returns String Array
 
-Humidity_Value = Returns Int Array
-Humidity_Unit = Returns String Array
+	Cloud = Returns String Array;
+	Rain Chance = Get Percentage of Clouds, Returns String Array
 
-Cloud = Returns String Array;
-Rain Chance = Get Percentage of Clouds, Returns String Array
+	Sun_Rise = Returns String Array
+	Sun_Set = Returns String Array
 
-Sun_Rise = Returns String Array
-Sun_Set = Returns String Array
+	City = Return String
 
-City = Return String
-
-Weather_Name = Returns String Array
+	Weather_Name = Returns String Array
 
 
 ***Bonus
